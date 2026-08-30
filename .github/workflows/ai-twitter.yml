@@ -1,1 +1,13 @@
+name: AI Twitter Manager
 
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 12 * * *"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test
+        run: echo "AI Twitter Manager is running!"
